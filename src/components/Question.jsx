@@ -1,27 +1,25 @@
 function Question({ texte, choix, reponse, explication, choisi, onChoisir }) {
-  const repondu = choisi !== null;
-
-  function couleur(i) {
-    if (!repondu) return {};
-    if (i === reponse) return { background: "green", color: "white" };
-    if (i === choisi) return { background: "red", color: "white" };
-    return {};
-  }
-
   return (
     <div>
       <h2>{texte}</h2>
-      {choix.map((c, i) => (
-        <button key={c} onClick={() => onChoisir(i)} style={couleur(i)}>
-          {c}
-        </button>
-      ))}
-      {repondu && (
-        <div>
-          <p>{choisi === reponse ? "Bonne réponse !" : "Mauvaise réponse."}</p>
-          <p>{explication}</p>
-        </div>
-      )}
+
+      {choix.map((c, i) => {
+        let classe = "choix";
+        if (choisi !== null) {
+          if (i === reponse) {
+            classe = "choix bon";
+          } else if (i === choisi) {
+            classe = "choix mauvais";
+          }
+        }
+        return (
+          <button key={c} className={classe} onClick={() => onChoisir(i)}>
+            {c}
+          </button>
+        );
+      })}
+
+      {choisi !== null && <p className="explication">{explication}</p>}
     </div>
   );
 }

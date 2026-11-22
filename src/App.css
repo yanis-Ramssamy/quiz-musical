@@ -1,0 +1,35 @@
+.app {
+  max-width: 600px;
+  margin: 2rem auto;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.choix {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+}
+
+.bon {
+  background: #4caf50;
+  color: white;
+  border-color: #4caf50;
+}
+
+.mauvais {
+  background: #e53935;
+  color: white;
+  border-color: #e53935;
+}
+
+.explication {
+  margin-top: 1rem;
+  font-style: italic;
+}

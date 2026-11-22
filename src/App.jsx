@@ -1,6 +1,7 @@
 import { useState } from "react";
 import data from "./data/questions.json";
 import Question from "./components/Question";
+import Resultat from "./components/Resultat";
 import "./App.css";
 
 function App() {
@@ -12,7 +13,6 @@ function App() {
   const question = data.questions[index];
 
   function choisir(i) {
-    // Si une réponse est déjà enregistrée, on ne fait rien
     if (choisi !== null) {
       return;
     }
@@ -27,11 +27,24 @@ function App() {
     setChoisi(null);
   }
 
+  function rejouer() {
+    setIndex(0);
+    setChoisi(null);
+    setScore(0);
+  }
+
   return (
     <div className="app">
       <h1>Quiz musical : {data.theme}</h1>
-      {!fini && (
-        <>
+
+      {fini ? (
+        <Resultat
+          score={score}
+          total={data.questions.length}
+          onRejouer={rejouer}
+        />
+      ) : (
+        <div>
           <Question
             texte={question.question}
             choix={question.choix}
@@ -40,13 +53,15 @@ function App() {
             choisi={choisi}
             onChoisir={choisir}
           />
-          {choisi !== null && <button onClick={suivant}>Suivant</button>}
-        </>
-      )}
-      {fini && (
-        <p>
-          Quiz terminé ! Score : {score} / {data.questions.length}
-        </p>
+
+          {choisi !== null && (
+            <button onClick={suivant}>
+              {index === data.questions.length - 1
+                ? "Voir le résultat"
+                : "Question suivante"}
+            </button>
+          )}
+        </div>
       )}
     </div>
   );

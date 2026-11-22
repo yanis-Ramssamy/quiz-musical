@@ -1,0 +1,95 @@
+{
+  "theme": "Michael Jackson",
+  "questions": [
+    {
+      "id": 1,
+      "categorie": "Biographie",
+      "difficulte": 1,
+      "question": "Quel surnom a été donné à Michael Jackson ?",
+      "choix": ["Le Prince de la soul", "Le Roi de la pop", "Le Boss", "Le Parrain du funk"],
+      "reponse": 1,
+      "explication": "On l’appelle « King of Pop », le Roi de la pop."
+    },
+    {
+      "id": 2,
+      "categorie": "Biographie",
+      "difficulte": 1,
+      "question": "Dans quelle ville est né Michael Jackson, en 1958 ?",
+      "choix": ["Detroit (Michigan)", "Chicago (Illinois)", "Gary (Indiana)", "Los Angeles (Californie)"],
+      "reponse": 2,
+      "explication": "Il est né le 29 août 1958 à Gary, dans l’Indiana."
+    },
+    {
+      "id": 3,
+      "categorie": "Biographie",
+      "difficulte": 2,
+      "question": "Dans quel groupe familial Michael a-t-il chanté enfant, avec ses frères ?",
+      "choix": ["The Temptations", "The Supremes", "The Osmonds", "The Jackson 5"],
+      "reponse": 3,
+      "explication": "Michael a débuté très jeune avec ses frères Jackie, Tito, Jermaine et Marlon dans les Jackson 5."
+    },
+    {
+      "id": 4,
+      "categorie": "Albums",
+      "difficulte": 1,
+      "question": "Quel album de 1982 contient « Billie Jean », « Beat It » et « Thriller » ?",
+      "choix": ["Thriller", "Bad", "Off the Wall", "Dangerous"],
+      "reponse": 0,
+      "explication": "Thriller (1982) est l’un des albums les plus vendus de tous les temps."
+    },
+    {
+      "id": 5,
+      "categorie": "Albums",
+      "difficulte": 2,
+      "question": "En quelle année est sorti l’album « Bad » ?",
+      "choix": ["1983", "1991", "1987", "1979"],
+      "reponse": 2,
+      "explication": "Bad est sorti le 31 août 1987."
+    },
+    {
+      "id": 6,
+      "categorie": "Titres",
+      "difficulte": 3,
+      "question": "Quel guitariste a joué le solo de « Beat It » ?",
+      "choix": ["Carlos Santana", "Eddie Van Halen", "Brian May", "Mark Knopfler"],
+      "reponse": 1,
+      "explication": "Eddie Van Halen, guitariste du groupe Van Halen, joue le solo de « Beat It »."
+    },
+    {
+      "id": 7,
+      "categorie": "Scène et clips",
+      "difficulte": 2,
+      "question": "Quel pas de danse Michael Jackson a-t-il présenté au grand public en 1983, dans l’émission « Motown 25 » ?",
+      "choix": ["Le moonwalk", "Le twist", "Le robot", "Le hustle"],
+      "reponse": 0,
+      "explication": "Il l’a dansé sur « Billie Jean » le 25 mars 1983, lors de cette émission télévisée."
+    },
+    {
+      "id": 8,
+      "categorie": "Scène et clips",
+      "difficulte": 3,
+      "question": "Qui a réalisé le clip de « Thriller » ?",
+      "choix": ["Steven Spielberg", "Tim Burton", "Quentin Tarantino", "John Landis"],
+      "reponse": 3,
+      "explication": "John Landis, qui avait aussi réalisé Le Loup-garou de Londres. Le clip est sorti fin 1983."
+    },
+    {
+      "id": 9,
+      "categorie": "Biographie",
+      "difficulte": 2,
+      "question": "Comment s’appelait le ranch de Michael Jackson, en Californie ?",
+      "choix": ["Graceland", "Neverland", "Wonderland", "Dreamland"],
+      "reponse": 1,
+      "explication": "Neverland, du nom du Pays imaginaire de Peter Pan."
+    },
+    {
+      "id": 10,
+      "categorie": "Titres",
+      "difficulte": 2,
+      "question": "Quelle chanson de 1985, coécrite avec Lionel Richie, a réuni de nombreux artistes pour lutter contre la famine ?",
+      "choix": ["Heal the World", "Earth Song", "We Are the World", "Man in the Mirror"],
+      "reponse": 2,
+      "explication": "« We Are the World » (USA for Africa) a été coécrite par Michael Jackson et Lionel Richie."
+    }
+  ]
+}
